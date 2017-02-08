@@ -27,5 +27,7 @@ public class IntStreamPractice {
         
         //product of values with reduce method
         System.out.printf("Product via reduce method: %d%n", IntStream.of(values).reduce(1, (x,y)->x*y));
+        
+        System.out.println(IntStream.of(values).summaryStatistics());
     }
 }
